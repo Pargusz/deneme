@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Rigel Enerji</title>
+
+        <!-- CSS FILES -->        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
+
+
+    </head>
+    
+    <body id="section_1">
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-8 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-geo-alt me-2"></i>
+                            İsa Yusuf Alptekin Cad. No:5 Bornova/İzmir
+                        </p>
+
+                        <p class="d-flex mb-0">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="mailto:info@rigelenerji.com">
+                                info@rigelenerji.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="https://wa.me/905441404446?text=Merhaba%20yardıma%20ihtiyacım%20var." class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <!-- Head etiketi içinde yer almalı -->
+<style>
+    /* CSS Animasyonları */
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    }
+
+    /* Animasyonu uygula */
+    .dropdown-menu {
+        animation-duration: 0.3s; /* Açılma/Kapanma süresi */
+        display: none; /* Başlangıçta görünmemesi için */
+    }
+
+    .show-menu {
+        display: block; /* Menüyü görünür yap */
+        animation-name: slideDown; /* Açılma animasyonu */
+    }
+
+    .hide-menu {
+        animation-name: slideUp; /* Kapanma animasyonu */
+    }
+</style>
+
+<!-- Body etiketi içinde yer almalı, sayfanın en altında olabilir -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var dropdownToggle = document.querySelector('.dropdown-toggle');
+        var dropdownMenu = document.querySelector('.dropdown-menu');
+
+        dropdownToggle.addEventListener('click', function () {
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.classList.remove('show-menu');
+                dropdownMenu.classList.add('hide-menu');
+                setTimeout(function () {
+                    dropdownMenu.style.display = 'none';
+                }, 300); // Animasyon süresi
+            } else {
+                dropdownMenu.style.display = 'block';
+                dropdownMenu.classList.remove('hide-menu');
+                dropdownMenu.classList.add('show-menu');
+            }
+        });
+    });
+</script>
+<!-- Add the following styles within the head section -->
+<style>
+  iframe {
+    width: 500px;
+    height: 800px;
+}
+
+/* Media query for smaller screens, like mobile devices */
+@media (max-width: 767px) {
+    iframe {
+        width: 120%;
+        height: 700px; /* Adjust the height as needed for mobile view */
+        display: block; /* Ensure it's displayed as a block element */
+        margin: 0 auto; /* Center the iframe horizontally */
+        box-sizing: border-box; /* Include padding and border in width and height */
+    }
+
+    .address {
+        background-color: white; /* Set a background color for the white space */
+        padding: 20px; /* Adjust the padding as needed */
+        box-sizing: border-box; /* Include padding and border in width and height */
+    }
+}
+</style>
+
+<!-- Include your other stylesheets or links here -->
+        </header>
+
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" class="logo img-fluid" alt="" style="width: 200px;">
+                </a>
+                
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <li class="dropdown-item"><a href="index.html" class="dropdown-item">Anasayfa</a></li>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link click-scroll dropdown-toggle" href="#section_3" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Çözümlerimiz</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="ElektrikTedarikDan.html">Elektrik Tedarik Danışmanlığı</a></li>
+
+                                <li><a class="dropdown-item" href="FaturaKontrolHiz.html">Fatura Kontrol Süreçleri</a></li>
+
+                                <li><a class="dropdown-item" href="Sonkaynak.html">Son Kaynak Tedarik Süreçleri</a></li>
+
+                                <li><a class="dropdown-item" href="Sanayisicil.html">Sanayi Sicil Belge Süreçleri</a></li>
+
+                                <li><a class="dropdown-item" href="Güvencebedeli.html">Güvence Bedeli İşlemleri</a></li>
+
+                                <li><a class="dropdown-item" href="ElektrionikFiziki.html">Elektronik/Fiziki Teminat Mektubu Süreçleri</a></li>
+
+                                <li><a class="dropdown-item" href="Belediyetüketim.html">Belediye Tüketim Vergisi Kontrol Süreçleri</a></li>
+
+                                <li><a class="dropdown-item" href="Yeniabonelik.html">Yeni Abonelik, Devir, Güç Azalımı, Abone Grubu Değişiklik Süreçleri</a></li>
+
+                                <li><a class="dropdown-item" href="TopluAbonelikHiz.html">Toplu Abonelik Hizmetleri</a></li>
+
+                                <li><a class="dropdown-item" href="perakendesatış.html">Perakende Satış Tarife Süreçleri</a></li>
+
+                                <li><a class="dropdown-item" href="Lisansızüretici.html">Lisansız Üretici Mutabakat Süreçleri</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="Referanslarımız.html">Referanslarımız</a>
+                        </li>
+
+                        <li class="nav-item ms-3">
+                            <a class="nav-link custom-btn custom-border-btn btn" href="İletişim.html">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <main>
+
+            <section class="donate-section">
+                <div class="section-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mx-auto">
+                            <form class="custom-form donate-form" action="#" method="get" role="form">
+                                <div class="form-check">
+                                    <div class="col-lg-12 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="info">
+                                            <div class="address">
+                                                <i class="bi bi-envelope"></i>
+                                                <!-- Stil eklenen iframe -->
+                                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFMeBcMHMf0T-5AtiEP5F3V1rswHNwM_EfZXWeL02r7ZoBVQ/viewform?embedded=true" 
+                                                width="500" height="600" frameborder="0" marginheight="0" marginwidth="0" style="width: 500; border: none;"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+<!-- Add this code below the existing logo code in your footer -->
+<div class="col-lg-3 col-12 mb-5" href="index.html">
+    <img src="images/logo.png" class="logo img-fluid mb-3" alt="" style="width: 200px;">
+    <!-- Add the following code for the clickable image -->
+    <a href="https://wa.me/905441404446?text=Merhaba%20yardıma%20ihtiyacım%20var.">
+        <img src="images/whatsapp-png.png" class="img-fluid" alt="Clickable Image" style="width: 200px;">
+    </a>
+</div>
+
+
+                    
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <h5 class="site-footer-title mb-3">Hızlı Menü</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="index.html" class="footer-menu-link">Anasayfa</a></li>
+
+                            <li class="footer-menu-item"><a href="hakkımızda.html" class="footer-menu-link">Hakkımızda</a></li>
+
+                            <li class="footer-menu-item"><a href="Referanslarımız.html" class="footer-menu-link">Referanslarımız</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                        <h5 class="site-footer-title mb-3">İletişim Bilgileri:</h5>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone me-2"></i>
+
+                            <a href="tel: 541-958-4446" class="site-footer-link">
+                                0541 958 44 46
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="mailto:info@rigelenerji.com" class="site-footer-link">
+                                info@rigelenerji.com
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex mt-3">
+                            <i class="bi-geo-alt me-2"></i>
+                            İsa Yusuf Alptekin Cad. No:5 Bornova/İzmir
+                        </p>
+
+                        <a href="#" class="custom-btn btn mt-3">Başa Dön!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">
+                            Copyright © 2024 <a href="#">Rigel Enerji</a> Dijital Çözüm Ortağı by <a href="https://whitybot.online/" target="_blank">Pargusz</a>
+                        </p>
+                    </div>
+                    <!-- Add Privacy Policy button to the right corner -->
+                    <div class="col-lg-6 col-md-5 col-12 text-lg-end text-md-end text-center">
+                        <a href="privacy-policy.html" class="btn btn-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
