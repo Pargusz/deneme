@@ -121,6 +121,12 @@
     .hide-menu {
         animation-name: slideUp; /* Kapanma animasyonu */
     }
+
+    .section-text {
+            text-align: justify;
+            display: flex;
+            justify-content: space-between;
+        }
 </style>
 
 <!-- Body etiketi içinde yer almalı, sayfanın en altında olabilir -->
@@ -220,7 +226,7 @@
                 <img src="images/blog resimleri/Güvene Bedeli/rahat kadın.png" class="img-fluid" alt="Section 1 Image">
             </div>
             <div class="col-lg-6 col-md-6 col-12">
-                <h3 class="section-subtitle">Satış Sözleşmesi Güvence Bedeli İşlemleri</h3>
+                <h3 class="section-subtitle">Güvence Bedeli İşlemleri</h3>
                 <p class="section-text">
                     Elektrik satış sözleşmesi güvence bedeli işlemleri, perakende satış sözleşmesi kapsamında indirimli elektrik sözleşmenizin sona ermesi ve 
                     enerji tedarikini sağlayan şirketten enerji almaya başladığınızda ortaya çıkabilir. Güvence bedeli hesaplama işlemleri karmaşık olabilir 
@@ -309,17 +315,16 @@
 <footer class="site-footer">
     <div class="container">
         <div class="row">
-<!-- Add this code below the existing logo code in your footer -->
-<div class="col-lg-3 col-12 mb-5" href="index.html">
-    <img src="images/rigel.png" class="logo img-fluid mb-3" alt="" style="width: 200px;">
-<!-- Add the following code for the clickable image -->
-<a href="https://wa.me/905441404446?text=Merhaba%20yardıma%20ihtiyacım%20var.">
-<img src="images/whatsapp-png.png" class="img-fluid" alt="Clickable Image" style="width: 200px;">
-</a>
-</div>
-
-
-            
+            <!-- Add this code below the existing logo code in your footer -->
+            <div class="col-lg-3 col-12 mb-5 text-center d-flex align-items-center"> <!-- Add d-flex and align-items-center classes -->
+                <div>
+                    <img src="images/rigel.png" class="logo img-fluid mb-3" alt="" style="width: 200px;">
+                    <!-- Add the following code for the clickable image -->
+                    <a href="https://wa.me/905441404446?text=Merhaba%20yard%C4%B1ma%20ihtiyac%C4%B1m%20var.">
+                        <img src="images/whatsapp-png.png" class="img-fluid" alt="Clickable Image" style="width: 200px; margin-left: 20px;"> <!-- Adjust the margin-left as needed -->
+                    </a>
+                </div>
+            </div>
 
             <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <h5 class="site-footer-title mb-3">Hızlı Menü</h5>
