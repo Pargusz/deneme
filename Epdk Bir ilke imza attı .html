@@ -17,7 +17,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
 
-        <title>Rigel Enerji-Referanslarımız</title>
+        <title>Rigel Enerji-Çatı Üstü GES Projeleri</title>
         <!-- Favicons -->
         <link href="images/favicon.png" rel="icon">
         <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -78,6 +78,7 @@
                             </li>
                         </ul>
                     </div>
+                    
 
                 </div>
             </div>
@@ -120,13 +121,22 @@
     .hide-menu {
         animation-name: slideUp; /* Kapanma animasyonu */
     }
+
+    .section-text {
+            text-align: justify;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .justify-text {
+    text-align: justify;
+}
 </style>
 
 <!-- Body etiketi içinde yer almalı, sayfanın en altında olabilir -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        var dropdownToggle = document.querySelector('.navbar-toggler');
-
+        var dropdownToggle = document.querySelector('.dropdown-toggle');
         var dropdownMenu = document.querySelector('.dropdown-menu');
 
         dropdownToggle.addEventListener('click', function () {
@@ -143,13 +153,6 @@
             }
         });
     });
-
-    $(document).ready(function () {
-    $('.navbar-toggler').click(function () {
-        $('.collapse').toggleClass('show');
-    });
-});
-
 </script>
         </header>
 
@@ -208,58 +211,83 @@
                 </ul>
               </div>
             </div>
-          </nav>            
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var dropdownToggle = document.querySelector('.dropdown-toggle');
-                var dropdownMenu = document.querySelector('.dropdown-menu');
-    
-                dropdownToggle.addEventListener('click', function () {
-                    if (dropdownMenu.style.display === 'block') {
-                        dropdownMenu.classList.remove('show-menu');
-                        dropdownMenu.classList.add('hide-menu');
-                        setTimeout(function () {
-                            dropdownMenu.style.display = 'none';
-                        }, 300); // Animasyon süresi
-                    } else {
-                        dropdownMenu.style.display = 'block';
-                        dropdownMenu.classList.remove('hide-menu');
-                        dropdownMenu.classList.add('show-menu');
-                    }
-                });
-            });
-        </script>
+          </nav>     
 
-        <div class="container">
-            <div class="row mt-4 mb-4">
-                <div class="col-12 text-center">
-                    <h2 class="display-4 text-dark font-weight-bold">Referanslarımız</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <a href="https://www.kuyucak.bel.tr/" target="_blank">
-                        <img src="images/referanslar/Kuyucak belediyesi.png" class="img-fluid" alt="Referans Image 1">
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <a href="https://sehzadeler.bel.tr" target="_blank">
-                        <img src="images/referanslar/Şehzadeler belediyesi.png" class="img-fluid" alt="Referans Image 2">
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <a href="https://www.izka.com.tr/" target="_blank">
-                        <img src="images/referanslar/izkaport.png" class="img-fluid" alt="Referans Image 3">
-                    </a>
-                </div>
+
+<!-- Add this section after your existing content -->
+<section id="featured-content" class="mt-5">
+    <div class="container">
+        <!-- Image Section -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="Blog Araçları/Resimler/Epdk Bir ilke imza attı/epdk logo.jpg" alt="Featured Image" class="img-fluid">
             </div>
         </div>
 
-        <footer class="site-footer">
+       <!-- Title Section -->
+<div class="row mt-4">
+    <div class="col-md-12 text-center">
+        <h2 class="mb-3">EPDK Bir İlke Daha İmza Attı</h2>
+        <p class="lead justify-text">
+            Türkiye gerek otogaz tüketimi gerekse otogazlı araç ve istasyon sayısı bakımından dünyanın en büyük LPG pazarlarından biri konumunda. Enerji Piyasası Düzenleme Kurumu da bir yandan sektörün adil, öngörülebilir ve rekabetçi yapısını korurken bir yandan da yatırım ve istihdam getirecek ve Türkiye ekonomisinin büyümesine katkı sağlayacak adımlar atmaya devam ediyor.
+
+            Halihazırda ülkemizde LPG Piyasasında taşıma faaliyeti gösteren 45 ayrı LPG Taşıma Lisansı sahibi firma bulunuyor. Lisans sahiplerinin 39’u boru hattı, 5’i denizyolu taşımacılığı alanında faaliyetlerini sürdürüyor.
+            
+            TCDD Taşımacılık Anonim Şirketi (TCDD) de bu alanda bir ilk olmak ve demiryolu ile LPG taşıma faaliyeti yapmak üzere EPDK’ya lisans başvurusunda bulundu. EPDK LPG Piyasası Dairesi Başkanlığının inceleme ve değerlendirmelerinin ardından TCDD’ye  demiryolu ile LPG taşıma lisansı verildi. TCDD’nin almış olduğu bu lisansla birlikte ülkemizde ilk kez demiryolu ile LPG taşıma faaliyeti lisanslandırılmış oldu.
+            
+            TCDD, taşıma lisansı kapsamında 60 bin 83 ton taşıma kapasiteli 966 adet vagon ile ülkenin dört bir yanına LPG taşıma hizmeti verebilecek.
+        </p>
+    </div>
+</div>
+
+
+        <!-- Recommended News Section -->
+        <div class="row mt-4">
+            <!-- News 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Blog Araçları/Resimler/epdk başkanı sözleri/epdk başkanı sözleri.jpg" alt="News 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">EPDK Başkanı Mustafa Yılmaz’dan Önemli Açıklamalar</h5>
+                        <p class="blog-date">29 Aralık 2023</p>
+                        <p class="card-text">“Türkiye’nin farklı şehirlerinde çalışmalar başladı. Depolamalı RES ve GES’ler ülkemizin gücüne güç katacak..."</p>
+                        <a href="EPDK Başkanı Mustafa Yılmaz’dan Önemli Açıklamalar.html" class="btn btn-primary">Habere Git!</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Blog Araçları/Resimler/12. Türkiye Rüzgar Enerjisi Kongresi/12. Türkiye Rüzgar Enerjisi Kongresi.jpg.png" alt="News 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">12. Türkiye Rüzgar Enerjisi Kongresi</h5>
+                        <p class="blog-date">13 Kasım 2023</p>
+                        <p class="card-text">Enerji Piyasası Düzenleme Kurumu Başkanı Mustafa Yılmaz bu yıl "Rüzgarın Yüzyılı" temasıyla düzenlenen 12. Türkiye Rüzgar Enerjisi Kongresi'nde önemli açıklamalar yaptı.</p>
+                        <a href="12. Türkiye Rüzgar Enerjisi Kongresi.html" class="btn btn-primary">Habere Git!</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Blog Araçları/Resimler/elektrikli araçlar/elektrikli araçlar.jpg" alt="News 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">4. Elektrikli Araçlar ve Akıllı Şehirler Çalıştayı</h5>
+                        <p class="blog-date">20 Kasım 2023</p>
+                        <p class="card-text">“Böyle bir mesleki dönüşümün, hem enerji sektöründe muazzam bir gelişme gösteren hem de enerji dönüşümünde iddialı hedefleri olan ülkemizde de yaşanması kaçınılmaz.</p>
+                        <a href="4. Elektrikli Araçlar ve Akıllı Şehirler Çalıştayı.html" class="btn btn-primary">Habere Git!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+          <footer class="site-footer">
             <div class="container">
                 <div class="row">
                     <!-- Add this code below the existing logo code in your footer -->
@@ -272,25 +300,25 @@
                             </a>
                         </div>
                     </div>
-
+        
                     <div class="col-lg-4 col-md-6 col-12 mb-4">
                         <h5 class="site-footer-title mb-3">Hızlı Menü</h5>
-
+        
                         <ul class="footer-menu">
                             <li class="footer-menu-item"><a href="index.html" class="footer-menu-link">Anasayfa</a></li>
-
+        
                             <li class="footer-menu-item"><a href="hakkımızda.html" class="footer-menu-link">Hakkımızda</a></li>
-
+        
                             <li class="footer-menu-item"><a href="Süreçlerimiz.html" class="footer-menu-link">Süreçlerimiz</a></li>
-
+        
                             <li class="footer-menu-item"><a href="BlogListeSayfası.html" class="footer-menu-link">Blog/Haberler</a></li>
-
+        
                             <li class="footer-menu-item"><a href="https://lisans.epdk.gov.tr/epvys-web/faces/pages/online/tarifeFatura/tarifeFatura.xhtml" class="footer-menu-link">Fatura Hesaplama</a></li>
-
+        
                             <li class="footer-menu-item"><a href="Referanslarımız.html" class="footer-menu-link">Referanslarımız</a></li>
                         </ul>
                     </div>
-
+        
                     <div class="col-lg-4 col-md-6 col-12 mx-auto">
                         <h5 class="site-footer-title mb-3">İletişim Bilgileri:</h5>
                     
@@ -319,13 +347,13 @@
                             <i class="bi-geo-alt me-2"></i>
                             İsa Yusuf Alptekin Cad. No:5 Bornova/İzmir
                         </p>
-
-
+        
+        
                         <a href="#" class="custom-btn btn mt-3">Başa Dön!</a>
                     </div>
                 </div>
             </div>
-
+        
             <div class="site-footer-bottom">
                 <div class="container">
                     <div class="col-lg-6 col-md-7 col-12">
@@ -341,7 +369,7 @@
             </div>
             
         </footer>
-
+        
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -349,6 +377,6 @@
         <script src="js/click-scroll.js"></script>
         <script src="js/counter.js"></script>
         <script src="js/custom.js"></script>
-
-    </body>
-</html>
+        
+        </body>
+        </html>

@@ -157,6 +157,26 @@
     .blog-item-content {
         padding: 15px;
     }
+
+    /* Genel stil */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* İstediğiniz boşluk miktarını ayarlayın */
+}
+
+.blog-item {
+    width: calc(50% - 10px); /* İki sütunlu düzen için genişlik hesaplaması */
+    box-sizing: border-box;
+}
+
+/* 768 piksel ve altındaki ekranlar için stil */
+@media screen and (max-width: 768px) {
+    .blog-item {
+        width: 100%; /* Tam genişlikte tek sütunlu düzen */
+    }
+}
+
 </style>
 
 <!-- Body etiketi içinde yer almalı, sayfanın en altında olabilir -->
@@ -244,60 +264,56 @@
 <body>
 
     <div class="blog-container">
-        <!-- İlk blog yazısı -->
-        <div class="blog-item" onclick="window.location.href='link1.html'">
-            <img src="resim1.jpg" alt="Resim 1">
-            <div class="blog-item-content">
-                <h3>Başlık 1</h3>
-                <p>Kısa açıklama 1</p>
-            </div>
+       <!-- İlk blog yazısı -->
+<div class="blog-item">
+    <a href="EPDK Başkanı Mustafa Yılmaz’dan Önemli Açıklamalar.html">
+        <img src="Blog Araçları/Resimler/epdk başkanı sözleri/epdk başkanı sözleri.jpg" alt="Resim 1">
+        <div class="blog-item-content">
+            <h3>EPDK Başkanı Mustafa Yılmaz’dan Önemli Açıklamalar</h3>
+            <p class="blog-date">29 Aralık 2023</p>
+            <p>“Türkiye’nin farklı şehirlerinde çalışmalar başladı. Depolamalı RES ve GES’ler ülkemizin gücüne güç katacak..."</p>
         </div>
+    </a>
+</div>
+
 
         <!-- İkinci blog yazısı -->
-        <div class="blog-item" onclick="window.location.href='link2.html'">
-            <img src="resim2.jpg" alt="Resim 2">
-            <div class="blog-item-content">
-                <h3>Başlık 2</h3>
-                <p>Kısa açıklama 2</p>
-            </div>
+        <div class="blog-item">
+            <a href="12. Türkiye Rüzgar Enerjisi Kongresi.html">
+                <img src="Blog Araçları/Resimler/12. Türkiye Rüzgar Enerjisi Kongresi/12. Türkiye Rüzgar Enerjisi Kongresi.jpg.png" alt="Resim 1">
+                <div class="blog-item-content">
+                    <h3>12. Türkiye Rüzgar Enerjisi Kongresi</h3>
+                    <p class="blog-date">13 Kasım 2023</p>
+                    <p>Enerji Piyasası Düzenleme Kurumu Başkanı Mustafa Yılmaz bu yıl "Rüzgarın Yüzyılı" temasıyla düzenlenen 12. Türkiye Rüzgar Enerjisi Kongresi'nde önemli açıklamalar yaptı.</p>
+                </div>
+            </a>
         </div>
 
         <!-- Üçüncü blog yazısı -->
-        <div class="blog-item" onclick="window.location.href='link3.html'">
-            <img src="resim3.jpg" alt="Resim 3">
-            <div class="blog-item-content">
-                <h3>Başlık 2</h3>
-                <p>Kısa açıklama 2</p>
-            </div>
+        <div class="blog-item">
+            <a href="Epdk Bir ilke imza attı .html">
+                <img src="Blog Araçları/Resimler/Epdk Bir ilke imza attı/epdk logo.jpg" alt="Resim 1">
+                <div class="blog-item-content">
+                    <h3>EPDK Bir İlke Daha İmza Attı</h3>
+                    <p class="blog-date">02 Kasım 2023</p>
+                    <p>Türkiye gerek otogaz tüketimi gerekse otogazlı araç ve istasyon sayısı bakımından dünyanın en büyük LPG pazarlarından biri konumunda.</p>
+                </div>
+            </a>
         </div>
 
         <!-- Üçüncü blog yazısı -->
-        <div class="blog-item" onclick="window.location.href='link3.html'">
-            <img src="resim3.jpg" alt="Resim 3">
-            <div class="blog-item-content">
-                <h3>Başlık 2</h3>
-                <p>Kısa açıklama 2</p>
-            </div>
+        <div class="blog-item">
+            <a href="4. Elektrikli Araçlar ve Akıllı Şehirler Çalıştayı.html">
+                <img src="Blog Araçları/Resimler/elektrikli araçlar/elektrikli araçlar.jpg" alt="Resim 1">
+                <div class="blog-item-content">
+                    <h3>4. Elektrikli Araçlar ve Akıllı Şehirler Çalıştayı</h3>
+                    <p class="blog-date">20 Kasım 2023</p>
+                    <p>Çalıştaya; EPDK Strateji Geliştirme Dairesi Başkanı Mehmet Kürkçü, EPDK Enerji Dönüşüm Dairesi Başkanı Zafer Korkulu, 
+                        Cumhurbaşkanlığı Bilim Teknoloji ve Yenilik Politikaları Kurulu Üyesi Dr. Osman Coşkun, EMO Ankara Şubesi Yönetim Kurulu Başkanı 
+                        Prof. Dr. Şeref Sağıroğlu ile kamu kurum ve kuruluş temsilcileri, üniversite öğretim elemanları, STK ve diğer meslek odaları üyeleri katıldı.</p>
+                </div>
+            </a>
         </div>
-
-        <!-- Üçüncü blog yazısı -->
-        <div class="blog-item" onclick="window.location.href='link3.html'">
-            <img src="resim3.jpg" alt="Resim 3">
-            <div class="blog-item-content">
-                <h3>Başlık 2</h3>
-                <p>Kısa açıklama 2</p>
-            </div>
-        </div>
-
-        <!-- Üçüncü blog yazısı -->
-        <div class="blog-item" onclick="window.location.href='link3.html'">
-            <img src="resim3.jpg" alt="Resim 3">
-            <div class="blog-item-content">
-                <h3>Başlık 2</h3>
-                <p>Kısa açıklama 2</p>
-            </div>
-        </div>
-        <!-- Diğer blog yazıları buraya eklenebilir -->
 
     </div>
 
